@@ -8,6 +8,7 @@
         body{
 			background-image: url('Acity.jpg');
 			background-size: cover;
+			height: 95vh;
 		}
 		h1{
 			color: white;
@@ -19,27 +20,49 @@
 			text-align: center;
 		}
 		a{
+			position: absolute;
 			text-align: center;
+			width: 130px;
+			height: 155px;
+			top: 7%;
+			left: 25%;
 			margin: 166px;
-			display: inline-block;
-			
 			text-decoration: none;
-			width: 117px;
-			background-color: #0087ff;
-			color: black;
-			border: 2px solid black;
-			border-radius: 13px;
-			font-size: 20px;
+			color: red;
+			background-color: green;
+			border: 4px white;
+			border-radius: 14px;
+			font-size: 100px;
+			font-family: cursive;
+			text-shadow: 4px 4px 7px black;
 		}
 		a:hover{
-			display: inline-block;
-			text-decoration: none;
-			width: 112px;
-			background-color: #0040ff;
+			color: red;
+			animation: stating 3s linear infinite;
+		}
+		footer{
+			position: absolute;
 			color: black;
-			border: 2px solid black;
-			border-radius: 13px;
-			font-size: 20px;
+			top: 94%;
+			left: 27%;
+			font-size: 25px;
+			font-family: sans-serif;
+			animation: glow 4s linear infinite;
+			text-shadow: 2px 2px 8px solid grey;
+			opacity: .5;
+		}
+	    @keyframes glow{
+		0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+			color: black;
+			text-shadow: none;
+		}
+		18.1%,20.1%,30%,50%,60.1%,80.1%,90%,92.1%,100%{
+			color: #FFF;
+			text-shadow: 0 0 10px #ff006e,
+			             0 0 20px #03045e,
+			             0 0 40px #ff006e,
+			             0 0 80px #03045e,
+			             0 0 160px #03045e;
 		}
 </style>
 </head>
@@ -50,6 +73,8 @@
 <div>
 	<a href="home.html">Start</a><br>
 </div>
-</form>
+<div id="div">
+<footer>A website by Pallab Shrestha , &copy;NO_#Copyright tanoshi.com</footer>
+</div>
 </body>
 </html>
